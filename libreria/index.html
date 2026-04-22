@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Opening in Libreria…</title>
+</head>
+<body>
+<script>
+  const p = new URLSearchParams(window.location.search);
+  const id = p.get('id'), hash = p.get('hash');
+  if (id && hash) {
+    window.location.replace('libreria://book/' + id + '/' + hash);
+  } else {
+    document.write('Invalid link.');
+  }
+</script>
+<noscript>Enable JavaScript to open this link in Libreria.</noscript>
+</body>
+</html>

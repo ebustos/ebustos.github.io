@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.zlibrary.app",
+    "sha256_cert_fingerprints": [
+      "93:35:37:D4:0B:C5:8A:09:B8:66:80:4C:3A:3F:99:79:E4:EE:31:12:AA:7E:56:D3:CB:FC:90:F6:80:6B:79:23",
+      "AC:2D:00:D5:78:58:8A:6E:73:58:C2:D7:46:4B:5D:AC:52:E2:A5:0C:96:BD:28:CD:9E:07:18:44:C8:70:15:53"
+    ]
+  }
+}]
