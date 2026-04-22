@@ -2,7 +2,15 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Opening in Libreria…</title>
+  <title>Libreria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #fafafa; color: #111; }
+    h1 { margin-bottom: 8px; }
+    p { color: #555; margin-bottom: 24px; }
+    a.btn { background: #1a73e8; color: #fff; text-decoration: none; padding: 12px 28px; border-radius: 6px; font-size: 1rem; }
+    a.btn:hover { background: #1558b0; }
+  </style>
 </head>
 <body>
 <script>
@@ -10,10 +18,11 @@
   const id = p.get('id'), hash = p.get('hash');
   if (id && hash) {
     window.location.replace('libreria://book/' + id + '/' + hash);
-  } else {
-    document.write('Invalid link.');
   }
 </script>
-<noscript>Enable JavaScript to open this link in Libreria.</noscript>
+<h1>Libreria</h1>
+<p>A Z-Library client for Android.</p>
+<a class="btn" href="libreria.apk">Download APK</a>
+<noscript><p>Enable JavaScript to open book links in Libreria.</p></noscript>
 </body>
 </html>
